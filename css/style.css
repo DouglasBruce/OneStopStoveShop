@@ -1,0 +1,234 @@
+body {
+    padding-top: 70px;
+}
+
+.gbg {
+	background-color: #F5F5F5 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hidem {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .hidem1 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .appear {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 994px) {
+  .appear1 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+.sc-border{
+	border-top:1px solid #d3d3d3;
+}
+
+.sc-color{
+	color: #DE1B1B !important;
+	font-size: 12pt;
+}
+
+hr {
+	height:1px; 
+	border:none; 
+	color:#d3d3d3 !important; 
+	background-color:#d3d3d3 !important;
+}
+
+/* cellpadding */
+th, td { 
+	padding: 10px; 
+}
+
+/* cellspacing */
+table { 
+	border-collapse: separate; 
+	border-spacing: 5px; /* cellspacing="5" */
+} 
+
+table { 
+	border-collapse:collapse; 
+	border-spacing: 0; /* cellspacing="0" */
+}   
+
+/* align (center) */
+table { 
+	margin: 0 auto; 
+}
+
+@media all and (max-width:768px) {
+    .affix {
+		position: static;
+		width: auto;
+		top: 0;
+    }	
+}
+
+.max{
+  color: red;
+}
+
+.modal-header {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+
+.modal-header > .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+.modal-footer {
+    background-color: #f9f9f9;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/****** Style Star Rating Widget *****/
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #cb6270;
+	border: none;
+}
+
+.ratings > input { display: none; } 
+.ratings > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  display: inline-block;
+}
+
+.ratings > .half:before { 
+  position: absolute;
+}
+
+.ratings > label { 
+  color: #bbb; 
+ float: right; 
+}
+
+/***** CSS to Highlight Stars on Hover *****/
+
+.ratings > input:checked ~ label, /* show colored star when clicked */
+.ratings:not(:checked) > label:hover, /* hover current star */
+.ratings:not(:checked) > label:hover ~ label { color: #cb6270;  } /* hover previous stars in list */
+
+.ratings > input:checked + label:hover, /* hover current star when changing rating */
+.ratings > input:checked ~ label:hover,
+.ratings > label:hover ~ input:checked ~ label, /* lighten current selection */
+.ratings > input:checked ~ label:hover ~ label { color: #de9ba4;  } 
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+	background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+}
+
+.navbar li a:hover {
+	color: #DE1B1B !important;
+}
+
+.padding-top-10 {
+	padding-top: 10px;
+}
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #A6A6A6;
+	background-image: url("up-arrow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 43%;
+	-webkit-border-radius: 30px; /* For Safari */
+	-moz-border-radius: 30px; /*For Mozilla / Firefox */
+	border-radius: 30px;
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+a:hover.back-to-top{
+	background-color: #DE1B1B;
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
